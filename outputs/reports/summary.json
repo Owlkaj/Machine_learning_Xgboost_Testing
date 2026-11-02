@@ -1,0 +1,118 @@
+{
+  "dataset": {
+    "metadata_rows": 71590,
+    "filtered_rows": 550,
+    "duplicate_rows": 0,
+    "invalid_label_rows": 0,
+    "missing_files": 0,
+    "unreadable_files": 0,
+    "valid_images": 550,
+    "class_counts": {
+      "0": 55,
+      "1": 55,
+      "2": 55,
+      "3": 55,
+      "4": 55,
+      "5": 55,
+      "6": 55,
+      "7": 55,
+      "8": 55,
+      "9": 55
+    }
+  },
+  "split": {
+    "train": 440,
+    "test": 110,
+    "test_size": 0.2,
+    "seed": 42,
+    "cv_folds": 5
+  },
+  "features": {
+    "n_train": 440,
+    "n_test": 110,
+    "n_features": 1296,
+    "expected_features": 1296,
+    "dtype": "float32",
+    "cache_train": "D:\\jhk\\machine learning tugas\\sistem\\cache\\hog_train.npz",
+    "cache_test": "D:\\jhk\\machine learning tugas\\sistem\\cache\\hog_test.npz"
+  },
+  "pca": {
+    "n_features_awal": 1296,
+    "n_komponen_pca": 157,
+    "reduksi_dimensi_persen": 87.886,
+    "cumulative_explained_variance": 0.950651
+  },
+  "scenarios": {
+    "tanpa_pca": {
+      "label": "XGBoost tanpa PCA",
+      "accuracy": 0.8727272727272727,
+      "macro_precision": 0.8793578643578643,
+      "macro_recall": 0.8727272727272727,
+      "macro_f1": 0.8732260493130057,
+      "training_time_sec": 17.618843800009927,
+      "n_features": 1296,
+      "cv_accuracy_mean": 0.7613636363636365,
+      "cv_accuracy_std": 0.039364791081110816,
+      "cv_f1_macro_mean": 0.7573723667113759,
+      "cv_f1_macro_std": 0.0392061920021149,
+      "cv_fit_time_mean_sec": 13.415925407409668,
+      "n_features_awal": 1296,
+      "n_komponen_pca": 1296,
+      "reduksi_dimensi_persen": 0.0,
+      "cumulative_explained_variance": 1.0
+    },
+    "dengan_pca": {
+      "label": "XGBoost dengan PCA",
+      "accuracy": 0.7181818181818181,
+      "macro_precision": 0.7197946497946499,
+      "macro_recall": 0.7181818181818181,
+      "macro_f1": 0.7157963485789572,
+      "training_time_sec": 4.456780400010757,
+      "n_features": 157,
+      "cv_accuracy_mean": 0.6818181818181818,
+      "cv_accuracy_std": 0.042518833940612975,
+      "cv_f1_macro_mean": 0.675316541768756,
+      "cv_f1_macro_std": 0.04705119428912942,
+      "cv_fit_time_mean_sec": 3.5682279109954833,
+      "n_features_awal": 1296,
+      "n_komponen_pca": 157,
+      "reduksi_dimensi_persen": 87.886,
+      "cumulative_explained_variance": 0.950651
+    }
+  },
+  "config": {
+    "image_size": [
+      28,
+      28
+    ],
+    "clahe": {
+      "clip_limit": 2.0,
+      "tile_grid_size": [
+        4,
+        4
+      ]
+    },
+    "hog": {
+      "orientations": "9",
+      "pixels_per_cell": "(4, 4)",
+      "cells_per_block": "(2, 2)",
+      "block_norm": "L2-Hys",
+      "visualize": "False"
+    },
+    "pca_variance": 0.95,
+    "xgb_params": {
+      "objective": "multi:softprob",
+      "num_class": 10,
+      "tree_method": "hist",
+      "n_estimators": 400,
+      "learning_rate": 0.08,
+      "max_depth": 6,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0.5,
+      "reg_lambda": 1.0,
+      "n_jobs": -1,
+      "random_state": 42
+    }
+  }
+}

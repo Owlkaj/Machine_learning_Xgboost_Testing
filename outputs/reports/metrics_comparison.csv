@@ -1,0 +1,3 @@
+Skenario,Accuracy,Macro Precision,Macro Recall,Macro F1-Score,Training Time (detik),Jumlah Fitur,CV Accuracy Mean,CV Accuracy Std,CV Macro F1 Mean,CV Macro F1 Std,CV Mean Fit Time (detik),Komponen PCA,Reduksi Dimensi (%),Cumulative Explained Variance
+XGBoost tanpa PCA,0.872727,0.879358,0.872727,0.873226,17.6188,1296,0.761364,0.039365,0.757372,0.039206,13.4159,1296,0.0,1.0
+XGBoost dengan PCA,0.718182,0.719795,0.718182,0.715796,4.4568,157,0.681818,0.042519,0.675317,0.047051,3.5682,157,87.886,0.950651

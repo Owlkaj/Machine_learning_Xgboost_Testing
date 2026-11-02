@@ -1,0 +1,33 @@
+{
+  "metadata_rows": 71590,
+  "filtered_rows": 550,
+  "duplicate_rows": 0,
+  "invalid_label_rows": 0,
+  "missing_files": 0,
+  "unreadable_files": 0,
+  "valid_images": 550,
+  "class_counts": {
+    "0": 55,
+    "1": 55,
+    "2": 55,
+    "3": 55,
+    "4": 55,
+    "5": 55,
+    "6": 55,
+    "7": 55,
+    "8": 55,
+    "9": 55
+  },
+  "class_distribution": {
+    "0": 55,
+    "1": 55,
+    "2": 55,
+    "3": 55,
+    "4": 55,
+    "5": 55,
+    "6": 55,
+    "7": 55,
+    "8": 55,
+    "9": 55
+  }
+}

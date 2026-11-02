@@ -1,0 +1,9 @@
+{
+  "n_train": 440,
+  "n_test": 110,
+  "n_features": 1296,
+  "expected_features": 1296,
+  "dtype": "float32",
+  "cache_train": "D:\\jhk\\machine learning tugas\\sistem\\cache\\hog_train.npz",
+  "cache_test": "D:\\jhk\\machine learning tugas\\sistem\\cache\\hog_test.npz"
+}
