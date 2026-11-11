@@ -141,3 +141,4 @@ fig.savefig(PLOTS_DIR / "accuracy_curve_comparison.png", dpi=300, bbox_inches="t
 plt.close(fig)
 
 print("Generated all accuracy curves successfully!")
+
